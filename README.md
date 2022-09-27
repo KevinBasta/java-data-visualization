@@ -1,22 +1,19 @@
 
-# ICS4U - CPT: Data Interaction and Visualization
-## Kevin Basta
+# Java Data Interaction and Visualization
+![JavaFX Application](https://github.com/KevinBasta/java-data-visualization/blob/master/readme.gif)
+This is a Java object-oriented project with a user interface and data visualization using JavaFX
 
-###  Description of Data set
-* This dataset has information about 247 of the largest companies in Japan.
-* The original values that are given are global rank, company name, sales, profits, assets, and market value.
-* I added the type of company and company description to enhance my data set and allow for better visualization and sorting.
+## Description 
+* CompnayList.java reads the CSV file and creates a Company object for each company and appends it to the compnayList ArrayList 
+* Encapsulation is used by having each Company object's data be stored in private variables with getter methods to access that data
+* JavaFX is used to create a bar graph, bubble graph, pie chart, and a searchable table. It is also used to create other UI pages such as the homepage, data summary, and individual record viewer
+* Linear search is used for finding each instance of a certain type of company (e.g. bank) so that they can be grouped for the graphs and displayed for the search by category
+* Linear string search is used for finding if a word or term searched is in a company's name. This is used for the company search
+* Selection Sort is used to sort values ascendingly or descendingly for the company search by category
 
-### Data set source
-* [Click Here for Data Set](https://data.world/finance/japan-largest-companies)
 
-### Why I selected this data set for this project
-* I aspire to one day open my own copany and in general, I really like exploring different companies that I don't know about. Each part of the world has a drastically different economic structure and I think that seeing different trends and things like what type of companies are dominating the country, which companies make the most money, and which contribute the most to the country's economy is very intresting.
-* Japan is an intriguing place because it only opened it's borders to forign trade in 1853. This means that it's economy would be drastically different than the rest of the world's economies because it survived without forign trade for so long.
-* Overall I pick the Japanese largest companies data set becasue I wanted to learn about the types of companies that are in Japan, see the trends in companies of a country that was closed off to the world for so long, and just to enjoy the project working with a data set that I liked.
-
-### Demo Video
-* [Click Here for Demo Video](https://drive.google.com/file/d/1MycsAYlNOO0ryRzoBSYlhuvgbYWOaJQR/view?usp=sharing)
-
-### Course Connections 
-* [Click Here for Course Connections Video](https://drive.google.com/file/d/1pVp0t3QNaweUM5z3kTE_xVDHBwH-eO1z/view?usp=sharing)
+## Dataset
+* The dataset I chose has information about 247 of the largest companies in Japan.
+* The original categories included are global rank, company name, sales, profits, assets, and market value
+* I added two extra categories to the dataset. Those being the type of company and the company description. The company types allow for better sorting and the company description provides a more enhanced individual company view
+* [Here is a link to the original dataset](https://data.world/finance/japan-largest-companies)
